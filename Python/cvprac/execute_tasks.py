@@ -17,7 +17,7 @@ client.connect([cvp1],cvp_user,cvp_pw)
 
 tasks = client.api.get_tasks_by_status('Pending')
 if(len(tasks) == 0):
-    print("No pending tasks.")
+    print("No pending tasks." + str(tasks))
 else:
     print("\nTotal Pending tasks: " + str(tasks))
 
