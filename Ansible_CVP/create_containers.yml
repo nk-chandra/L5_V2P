@@ -1,0 +1,11 @@
+---
+- name: Create container Topology
+  hosts: cvp1
+
+  vars_files: 
+  - ../vars/CVP_model.yml
+
+  tasks:
+    - name: Set container topology
+      arista.cvp.cv_container_v3:
+        topology: "{{ CVP_CONTAINERS }}"
