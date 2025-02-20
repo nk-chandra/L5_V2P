@@ -18,22 +18,22 @@ CVP_DEVICES_MLAG:
     configlets:
       - 'ATD-INFRA'
       - 'leaf1-base'
-      - 'MLAG-Left'
+      - 'MLAG_Left'
   - fqdn: 'leaf2'
     parentContainerName: 'Leaf'
     configlets:
       - 'ATD-INFRA'
       - 'leaf2-base'
-      - 'MLAG-Right'
+      - 'MLAG_Right'
   - fqdn: 'leaf3'
     parentContainerName: 'Leaf'
     configlets:
       - 'ATD-INFRA'
       - 'leaf3-base'
-      - 'MLAG-Left'
+      - 'MLAG_Left'
   - fqdn: 'leaf4'
     parentContainerName: 'Leaf'
     configlets:
       - 'ATD-INFRA'
       - 'leaf4-base'
-      - 'MLAG-Right'
+      - 'MLAG_Right'
