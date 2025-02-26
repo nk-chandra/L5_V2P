@@ -3,7 +3,7 @@
   hosts: cvp1
 
   vars_files:
-    - ../vars/CVP_model.yml
+    - /home/coder/project/labfiles/V2_L5-CodeRepo/Ansible_CVP/vars/CVP_model.yml
 
   tasks:
     - name: Apply configlets to devices

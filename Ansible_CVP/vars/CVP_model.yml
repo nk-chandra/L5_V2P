@@ -1,10 +1,10 @@
 ---
-path: "{{ lookup('env','PWD') }}"
+path: "{{lookup('env','PWD')}}"
 
 CVP_CONFIGLETS:
-  Alias_test: "alias ship show ip interface brief"
-  MLAG_LEFT: "{{ lookup('file','{{path}}/configlets/MLAG_Left.cfg') }}"
-  MLAG_RIGHT: "{{ lookup('file','{{path}}/configlets/MLAG_Right.cfg') }}"
+  Alias_test: “alias ship show ip interface brief”
+  MLAG_Left: "{{ lookup('file','{{path}}/configlets/MLAG_Left.cfg') }}"
+  MLAG_Right: "{{ lookup('file','{{path}}/configlets/MLAG_Right.cfg') }}"
 
 CVP_CONTAINERS:
   DC1:
@@ -18,22 +18,22 @@ CVP_DEVICES_MLAG:
     configlets:
       - 'ATD-INFRA'
       - 'leaf1-base'
-      - 'MLAG_Left'
+      - 'MLAG_LEFT'
   - fqdn: 'leaf2'
     parentContainerName: 'Leaf'
     configlets:
       - 'ATD-INFRA'
       - 'leaf2-base'
-      - 'MLAG_Right'
+      - 'MLAG_RIGHT'
   - fqdn: 'leaf3'
     parentContainerName: 'Leaf'
     configlets:
       - 'ATD-INFRA'
       - 'leaf3-base'
-      - 'MLAG_Left'
+      - 'MLAG_LEFT'
   - fqdn: 'leaf4'
     parentContainerName: 'Leaf'
     configlets:
       - 'ATD-INFRA'
       - 'leaf4-base'
-      - 'MLAG_Right'
+      - 'MLAG_RIGHT'
