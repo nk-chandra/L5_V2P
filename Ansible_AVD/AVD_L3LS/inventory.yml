@@ -4,7 +4,7 @@ all:
     CVP_cluster:
       vars:
           ansible_user: arista
-          ansible_password: aristakj49
+          ansible_password: arista7t2j
           ansible_connection: httpapi
           ansible_httpapi_use_ssl: True
           ansible_httpapi_validate_certs: False
@@ -17,7 +17,7 @@ all:
     FABRIC:
       vars:
         ansible_user: arista
-        ansible_ssh_pass: aristakj49 # If using SSH keys, this can be removed
+        ansible_ssh_pass: arista7t2j # If using SSH keys, this can be removed
 # Use this section if you want to perform testing via the eAPI
         ansible_connection: httpapi
         ansible_httpapi_use_ssl: True
