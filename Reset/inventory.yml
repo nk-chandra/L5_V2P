@@ -4,7 +4,7 @@ all:
     CVP_cluster:
       vars:
           ansible_user: arista
-          ansible_password: aristakj49
+          ansible_password: arista7t2j
           ansible_connection: httpapi
           ansible_httpapi_use_ssl: True
           ansible_httpapi_validate_certs: False
