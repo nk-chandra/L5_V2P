@@ -226,10 +226,10 @@ vlan 4094
 
 | Interface | Description | Type | Channel Group | IP Address | VRF |  MTU | Shutdown | ACL In | ACL Out |
 | --------- | ----------- | -----| ------------- | ---------- | ----| ---- | -------- | ------ | ------- |
-| Ethernet3 | P2P_LINK_TO_SPINE1_Ethernet4 | routed | - | 192.168.103.9/31 | default | 1550 | False | - | - |
-| Ethernet4 | P2P_LINK_TO_SPINE2_Ethernet4 | routed | - | 192.168.103.11/31 | default | 1550 | False | - | - |
-| Ethernet5 | P2P_LINK_TO_SPINE3_Ethernet4 | routed | - | 192.168.103.13/31 | default | 1550 | False | - | - |
-| Ethernet6 | P2P_LINK_TO_SPINE4_Ethernet4 | routed | - | 192.168.103.15/31 | default | 1550 | False | - | - |
+| Ethernet3 | P2P_LINK_TO_SPINE1_Ethernet4 | routed | - | 192.168.103.9/31 | default | 1500 | False | - | - |
+| Ethernet4 | P2P_LINK_TO_SPINE2_Ethernet4 | routed | - | 192.168.103.11/31 | default | 1500 | False | - | - |
+| Ethernet5 | P2P_LINK_TO_SPINE3_Ethernet4 | routed | - | 192.168.103.13/31 | default | 1500 | False | - | - |
+| Ethernet6 | P2P_LINK_TO_SPINE4_Ethernet4 | routed | - | 192.168.103.15/31 | default | 1500 | False | - | - |
 
 #### Ethernet Interfaces Device Configuration
 
@@ -248,28 +248,28 @@ interface Ethernet2
 interface Ethernet3
    description P2P_LINK_TO_SPINE1_Ethernet4
    no shutdown
-   mtu 1550
+   mtu 1500
    no switchport
    ip address 192.168.103.9/31
 !
 interface Ethernet4
    description P2P_LINK_TO_SPINE2_Ethernet4
    no shutdown
-   mtu 1550
+   mtu 1500
    no switchport
    ip address 192.168.103.11/31
 !
 interface Ethernet5
    description P2P_LINK_TO_SPINE3_Ethernet4
    no shutdown
-   mtu 1550
+   mtu 1500
    no switchport
    ip address 192.168.103.13/31
 !
 interface Ethernet6
    description P2P_LINK_TO_SPINE4_Ethernet4
    no shutdown
-   mtu 1550
+   mtu 1500
    no switchport
    ip address 192.168.103.15/31
 !
@@ -353,9 +353,9 @@ interface Loopback1
 | --------- | ----------- | --- | ---- | -------- |
 | Vlan10 | DMZ | VRF_A | - | False |
 | Vlan20 | Internal | VRF_A | - | False |
-| Vlan3009 | MLAG_PEER_L3_iBGP: vrf VRF_A | VRF_A | 1550 | False |
-| Vlan4093 | MLAG_PEER_L3_PEERING | default | 1550 | False |
-| Vlan4094 | MLAG_PEER | default | 1550 | False |
+| Vlan3009 | MLAG_PEER_L3_iBGP: vrf VRF_A | VRF_A | 1500 | False |
+| Vlan4093 | MLAG_PEER_L3_PEERING | default | 1500 | False |
+| Vlan4094 | MLAG_PEER | default | 1500 | False |
 
 ##### IPv4
 
@@ -386,20 +386,20 @@ interface Vlan20
 interface Vlan3009
    description MLAG_PEER_L3_iBGP: vrf VRF_A
    no shutdown
-   mtu 1550
+   mtu 1500
    vrf VRF_A
    ip address 10.255.251.1/31
 !
 interface Vlan4093
    description MLAG_PEER_L3_PEERING
    no shutdown
-   mtu 1550
+   mtu 1500
    ip address 10.255.251.1/31
 !
 interface Vlan4094
    description MLAG_PEER
    no shutdown
-   mtu 1550
+   mtu 1500
    no autostate
    ip address 10.255.252.1/31
 ```

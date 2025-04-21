@@ -15,12 +15,12 @@ cvp_configlets:
     shutdown\n   channel-group 1 mode active\n!\ninterface Ethernet2\n   description
     MLAG_PEER_leaf2_Ethernet2\n   no shutdown\n   channel-group 1 mode active\n!\ninterface
     Ethernet3\n   description P2P_LINK_TO_SPINE1_Ethernet3\n   no shutdown\n   mtu
-    1550\n   no switchport\n   ip address 192.168.103.1/31\n!\ninterface Ethernet4\n
-    \  description P2P_LINK_TO_SPINE2_Ethernet3\n   no shutdown\n   mtu 1550\n   no
+    1500\n   no switchport\n   ip address 192.168.103.1/31\n!\ninterface Ethernet4\n
+    \  description P2P_LINK_TO_SPINE2_Ethernet3\n   no shutdown\n   mtu 1500\n   no
     switchport\n   ip address 192.168.103.3/31\n!\ninterface Ethernet5\n   description
-    P2P_LINK_TO_SPINE3_Ethernet3\n   no shutdown\n   mtu 1550\n   no switchport\n
+    P2P_LINK_TO_SPINE3_Ethernet3\n   no shutdown\n   mtu 1500\n   no switchport\n
     \  ip address 192.168.103.5/31\n!\ninterface Ethernet6\n   description P2P_LINK_TO_SPINE4_Ethernet3\n
-    \  no shutdown\n   mtu 1550\n   no switchport\n   ip address 192.168.103.7/31\n!\ninterface
+    \  no shutdown\n   mtu 1500\n   no switchport\n   ip address 192.168.103.7/31\n!\ninterface
     Ethernet7\n   description host1_Ethernet1\n   no shutdown\n   channel-group 7
     mode active\n!\ninterface Loopback0\n   description EVPN_Overlay_Peering\n   no
     shutdown\n   ip address 192.168.101.1/32\n!\ninterface Loopback1\n   description
@@ -30,9 +30,9 @@ cvp_configlets:
     \  vrf VRF_A\n   ip address virtual 10.1.10.1/24\n!\ninterface Vlan20\n   description
     Internal\n   no shutdown\n   vrf VRF_A\n   ip address virtual 10.1.20.1/24\n!\ninterface
     Vlan3009\n   description MLAG_PEER_L3_iBGP: vrf VRF_A\n   no shutdown\n   mtu
-    1550\n   vrf VRF_A\n   ip address 10.255.251.0/31\n!\ninterface Vlan4093\n   description
-    MLAG_PEER_L3_PEERING\n   no shutdown\n   mtu 1550\n   ip address 10.255.251.0/31\n!\ninterface
-    Vlan4094\n   description MLAG_PEER\n   no shutdown\n   mtu 1550\n   no autostate\n
+    1500\n   vrf VRF_A\n   ip address 10.255.251.0/31\n!\ninterface Vlan4093\n   description
+    MLAG_PEER_L3_PEERING\n   no shutdown\n   mtu 1500\n   ip address 10.255.251.0/31\n!\ninterface
+    Vlan4094\n   description MLAG_PEER\n   no shutdown\n   mtu 1500\n   no autostate\n
     \  ip address 10.255.252.0/31\n!\ninterface Vxlan1\n   description leaf1_VTEP\n
     \  vxlan source-interface Loopback1\n   vxlan virtual-router encapsulation mac-address
     mlag-system-id\n   vxlan udp-port 4789\n   vxlan vlan 10 vni 10010\n   vxlan vlan
@@ -100,12 +100,12 @@ cvp_configlets:
     shutdown\n   channel-group 1 mode active\n!\ninterface Ethernet2\n   description
     MLAG_PEER_leaf1_Ethernet2\n   no shutdown\n   channel-group 1 mode active\n!\ninterface
     Ethernet3\n   description P2P_LINK_TO_SPINE1_Ethernet4\n   no shutdown\n   mtu
-    1550\n   no switchport\n   ip address 192.168.103.9/31\n!\ninterface Ethernet4\n
-    \  description P2P_LINK_TO_SPINE2_Ethernet4\n   no shutdown\n   mtu 1550\n   no
+    1500\n   no switchport\n   ip address 192.168.103.9/31\n!\ninterface Ethernet4\n
+    \  description P2P_LINK_TO_SPINE2_Ethernet4\n   no shutdown\n   mtu 1500\n   no
     switchport\n   ip address 192.168.103.11/31\n!\ninterface Ethernet5\n   description
-    P2P_LINK_TO_SPINE3_Ethernet4\n   no shutdown\n   mtu 1550\n   no switchport\n
+    P2P_LINK_TO_SPINE3_Ethernet4\n   no shutdown\n   mtu 1500\n   no switchport\n
     \  ip address 192.168.103.13/31\n!\ninterface Ethernet6\n   description P2P_LINK_TO_SPINE4_Ethernet4\n
-    \  no shutdown\n   mtu 1550\n   no switchport\n   ip address 192.168.103.15/31\n!\ninterface
+    \  no shutdown\n   mtu 1500\n   no switchport\n   ip address 192.168.103.15/31\n!\ninterface
     Ethernet7\n   description host1_Ethernet2\n   no shutdown\n   channel-group 7
     mode active\n!\ninterface Loopback0\n   description EVPN_Overlay_Peering\n   no
     shutdown\n   ip address 192.168.101.2/32\n!\ninterface Loopback1\n   description
@@ -115,9 +115,9 @@ cvp_configlets:
     \  vrf VRF_A\n   ip address virtual 10.1.10.1/24\n!\ninterface Vlan20\n   description
     Internal\n   no shutdown\n   vrf VRF_A\n   ip address virtual 10.1.20.1/24\n!\ninterface
     Vlan3009\n   description MLAG_PEER_L3_iBGP: vrf VRF_A\n   no shutdown\n   mtu
-    1550\n   vrf VRF_A\n   ip address 10.255.251.1/31\n!\ninterface Vlan4093\n   description
-    MLAG_PEER_L3_PEERING\n   no shutdown\n   mtu 1550\n   ip address 10.255.251.1/31\n!\ninterface
-    Vlan4094\n   description MLAG_PEER\n   no shutdown\n   mtu 1550\n   no autostate\n
+    1500\n   vrf VRF_A\n   ip address 10.255.251.1/31\n!\ninterface Vlan4093\n   description
+    MLAG_PEER_L3_PEERING\n   no shutdown\n   mtu 1500\n   ip address 10.255.251.1/31\n!\ninterface
+    Vlan4094\n   description MLAG_PEER\n   no shutdown\n   mtu 1500\n   no autostate\n
     \  ip address 10.255.252.1/31\n!\ninterface Vxlan1\n   description leaf2_VTEP\n
     \  vxlan source-interface Loopback1\n   vxlan virtual-router encapsulation mac-address
     mlag-system-id\n   vxlan udp-port 4789\n   vxlan vlan 10 vni 10010\n   vxlan vlan
@@ -185,12 +185,12 @@ cvp_configlets:
     shutdown\n   channel-group 1 mode active\n!\ninterface Ethernet2\n   description
     MLAG_PEER_leaf4_Ethernet2\n   no shutdown\n   channel-group 1 mode active\n!\ninterface
     Ethernet3\n   description P2P_LINK_TO_SPINE1_Ethernet5\n   no shutdown\n   mtu
-    1550\n   no switchport\n   ip address 192.168.103.17/31\n!\ninterface Ethernet4\n
-    \  description P2P_LINK_TO_SPINE2_Ethernet5\n   no shutdown\n   mtu 1550\n   no
+    1500\n   no switchport\n   ip address 192.168.103.17/31\n!\ninterface Ethernet4\n
+    \  description P2P_LINK_TO_SPINE2_Ethernet5\n   no shutdown\n   mtu 1500\n   no
     switchport\n   ip address 192.168.103.19/31\n!\ninterface Ethernet5\n   description
-    P2P_LINK_TO_SPINE3_Ethernet5\n   no shutdown\n   mtu 1550\n   no switchport\n
+    P2P_LINK_TO_SPINE3_Ethernet5\n   no shutdown\n   mtu 1500\n   no switchport\n
     \  ip address 192.168.103.21/31\n!\ninterface Ethernet6\n   description P2P_LINK_TO_SPINE4_Ethernet5\n
-    \  no shutdown\n   mtu 1550\n   no switchport\n   ip address 192.168.103.23/31\n!\ninterface
+    \  no shutdown\n   mtu 1500\n   no switchport\n   ip address 192.168.103.23/31\n!\ninterface
     Ethernet7\n   description host3_Ethernet1\n   no shutdown\n   channel-group 7
     mode active\n!\ninterface Loopback0\n   description EVPN_Overlay_Peering\n   no
     shutdown\n   ip address 192.168.101.3/32\n!\ninterface Loopback1\n   description
@@ -200,9 +200,9 @@ cvp_configlets:
     \  vrf VRF_A\n   ip address virtual 10.1.10.1/24\n!\ninterface Vlan20\n   description
     Internal\n   no shutdown\n   vrf VRF_A\n   ip address virtual 10.1.20.1/24\n!\ninterface
     Vlan3009\n   description MLAG_PEER_L3_iBGP: vrf VRF_A\n   no shutdown\n   mtu
-    1550\n   vrf VRF_A\n   ip address 10.255.251.4/31\n!\ninterface Vlan4093\n   description
-    MLAG_PEER_L3_PEERING\n   no shutdown\n   mtu 1550\n   ip address 10.255.251.4/31\n!\ninterface
-    Vlan4094\n   description MLAG_PEER\n   no shutdown\n   mtu 1550\n   no autostate\n
+    1500\n   vrf VRF_A\n   ip address 10.255.251.4/31\n!\ninterface Vlan4093\n   description
+    MLAG_PEER_L3_PEERING\n   no shutdown\n   mtu 1500\n   ip address 10.255.251.4/31\n!\ninterface
+    Vlan4094\n   description MLAG_PEER\n   no shutdown\n   mtu 1500\n   no autostate\n
     \  ip address 10.255.252.4/31\n!\ninterface Vxlan1\n   description leaf3_VTEP\n
     \  vxlan source-interface Loopback1\n   vxlan virtual-router encapsulation mac-address
     mlag-system-id\n   vxlan udp-port 4789\n   vxlan vlan 10 vni 10010\n   vxlan vlan
@@ -270,12 +270,12 @@ cvp_configlets:
     shutdown\n   channel-group 1 mode active\n!\ninterface Ethernet2\n   description
     MLAG_PEER_leaf3_Ethernet2\n   no shutdown\n   channel-group 1 mode active\n!\ninterface
     Ethernet3\n   description P2P_LINK_TO_SPINE1_Ethernet6\n   no shutdown\n   mtu
-    1550\n   no switchport\n   ip address 192.168.103.25/31\n!\ninterface Ethernet4\n
-    \  description P2P_LINK_TO_SPINE2_Ethernet6\n   no shutdown\n   mtu 1550\n   no
+    1500\n   no switchport\n   ip address 192.168.103.25/31\n!\ninterface Ethernet4\n
+    \  description P2P_LINK_TO_SPINE2_Ethernet6\n   no shutdown\n   mtu 1500\n   no
     switchport\n   ip address 192.168.103.27/31\n!\ninterface Ethernet5\n   description
-    P2P_LINK_TO_SPINE3_Ethernet6\n   no shutdown\n   mtu 1550\n   no switchport\n
+    P2P_LINK_TO_SPINE3_Ethernet6\n   no shutdown\n   mtu 1500\n   no switchport\n
     \  ip address 192.168.103.29/31\n!\ninterface Ethernet6\n   description P2P_LINK_TO_SPINE4_Ethernet6\n
-    \  no shutdown\n   mtu 1550\n   no switchport\n   ip address 192.168.103.31/31\n!\ninterface
+    \  no shutdown\n   mtu 1500\n   no switchport\n   ip address 192.168.103.31/31\n!\ninterface
     Ethernet7\n   description host3_Ethernet2\n   no shutdown\n   channel-group 7
     mode active\n!\ninterface Ethernet9\n   no shutdown\n   no switchport\n   vrf
     VRF_A\n   ip address 10.1.5.1/24\n!\ninterface Loopback0\n   description EVPN_Overlay_Peering\n
@@ -286,9 +286,9 @@ cvp_configlets:
     \  vrf VRF_A\n   ip address virtual 10.1.10.1/24\n!\ninterface Vlan20\n   description
     Internal\n   no shutdown\n   vrf VRF_A\n   ip address virtual 10.1.20.1/24\n!\ninterface
     Vlan3009\n   description MLAG_PEER_L3_iBGP: vrf VRF_A\n   no shutdown\n   mtu
-    1550\n   vrf VRF_A\n   ip address 10.255.251.5/31\n!\ninterface Vlan4093\n   description
-    MLAG_PEER_L3_PEERING\n   no shutdown\n   mtu 1550\n   ip address 10.255.251.5/31\n!\ninterface
-    Vlan4094\n   description MLAG_PEER\n   no shutdown\n   mtu 1550\n   no autostate\n
+    1500\n   vrf VRF_A\n   ip address 10.255.251.5/31\n!\ninterface Vlan4093\n   description
+    MLAG_PEER_L3_PEERING\n   no shutdown\n   mtu 1500\n   ip address 10.255.251.5/31\n!\ninterface
+    Vlan4094\n   description MLAG_PEER\n   no shutdown\n   mtu 1500\n   no autostate\n
     \  ip address 10.255.252.5/31\n!\ninterface Vxlan1\n   description leaf4_VTEP\n
     \  vxlan source-interface Loopback1\n   vxlan virtual-router encapsulation mac-address
     mlag-system-id\n   vxlan udp-port 4789\n   vxlan vlan 10 vni 10010\n   vxlan vlan
@@ -345,13 +345,13 @@ cvp_configlets:
     1006 1199\n!\ntransceiver qsfp default-mode 4x10G\n!\nservice routing protocols
     model multi-agent\n!\nhostname spine1\ndns domain atd.lab\n!\nspanning-tree mode
     none\n!\nno enable password\nno aaa root\n!\nvrf instance MGMT\n!\ninterface Ethernet3\n
-    \  description P2P_LINK_TO_LEAF1_Ethernet3\n   no shutdown\n   mtu 1550\n   no
+    \  description P2P_LINK_TO_LEAF1_Ethernet3\n   no shutdown\n   mtu 1500\n   no
     switchport\n   ip address 192.168.103.0/31\n!\ninterface Ethernet4\n   description
-    P2P_LINK_TO_LEAF2_Ethernet3\n   no shutdown\n   mtu 1550\n   no switchport\n   ip
+    P2P_LINK_TO_LEAF2_Ethernet3\n   no shutdown\n   mtu 1500\n   no switchport\n   ip
     address 192.168.103.8/31\n!\ninterface Ethernet5\n   description P2P_LINK_TO_LEAF3_Ethernet3\n
-    \  no shutdown\n   mtu 1550\n   no switchport\n   ip address 192.168.103.16/31\n!\ninterface
+    \  no shutdown\n   mtu 1500\n   no switchport\n   ip address 192.168.103.16/31\n!\ninterface
     Ethernet6\n   description P2P_LINK_TO_LEAF4_Ethernet3\n   no shutdown\n   mtu
-    1550\n   no switchport\n   ip address 192.168.103.24/31\n!\ninterface Loopback0\n
+    1500\n   no switchport\n   ip address 192.168.103.24/31\n!\ninterface Loopback0\n
     \  description EVPN_Overlay_Peering\n   no shutdown\n   ip address 192.168.101.11/32\n!\ninterface
     Management0\n   description oob_management\n   no shutdown\n   vrf MGMT\n   ip
     address 192.168.0.11/24\n!\nip routing\nno ip routing vrf MGMT\n!\nip prefix-list
@@ -389,13 +389,13 @@ cvp_configlets:
     1006 1199\n!\ntransceiver qsfp default-mode 4x10G\n!\nservice routing protocols
     model multi-agent\n!\nhostname spine2\ndns domain atd.lab\n!\nspanning-tree mode
     none\n!\nno enable password\nno aaa root\n!\nvrf instance MGMT\n!\ninterface Ethernet3\n
-    \  description P2P_LINK_TO_LEAF1_Ethernet4\n   no shutdown\n   mtu 1550\n   no
+    \  description P2P_LINK_TO_LEAF1_Ethernet4\n   no shutdown\n   mtu 1500\n   no
     switchport\n   ip address 192.168.103.2/31\n!\ninterface Ethernet4\n   description
-    P2P_LINK_TO_LEAF2_Ethernet4\n   no shutdown\n   mtu 1550\n   no switchport\n   ip
+    P2P_LINK_TO_LEAF2_Ethernet4\n   no shutdown\n   mtu 1500\n   no switchport\n   ip
     address 192.168.103.10/31\n!\ninterface Ethernet5\n   description P2P_LINK_TO_LEAF3_Ethernet4\n
-    \  no shutdown\n   mtu 1550\n   no switchport\n   ip address 192.168.103.18/31\n!\ninterface
+    \  no shutdown\n   mtu 1500\n   no switchport\n   ip address 192.168.103.18/31\n!\ninterface
     Ethernet6\n   description P2P_LINK_TO_LEAF4_Ethernet4\n   no shutdown\n   mtu
-    1550\n   no switchport\n   ip address 192.168.103.26/31\n!\ninterface Loopback0\n
+    1500\n   no switchport\n   ip address 192.168.103.26/31\n!\ninterface Loopback0\n
     \  description EVPN_Overlay_Peering\n   no shutdown\n   ip address 192.168.101.12/32\n!\ninterface
     Management0\n   description oob_management\n   no shutdown\n   vrf MGMT\n   ip
     address 192.168.0.12/24\n!\nip routing\nno ip routing vrf MGMT\n!\nip prefix-list
@@ -433,13 +433,13 @@ cvp_configlets:
     1006 1199\n!\ntransceiver qsfp default-mode 4x10G\n!\nservice routing protocols
     model multi-agent\n!\nhostname spine3\ndns domain atd.lab\n!\nspanning-tree mode
     none\n!\nno enable password\nno aaa root\n!\nvrf instance MGMT\n!\ninterface Ethernet3\n
-    \  description P2P_LINK_TO_LEAF1_Ethernet5\n   no shutdown\n   mtu 1550\n   no
+    \  description P2P_LINK_TO_LEAF1_Ethernet5\n   no shutdown\n   mtu 1500\n   no
     switchport\n   ip address 192.168.103.4/31\n!\ninterface Ethernet4\n   description
-    P2P_LINK_TO_LEAF2_Ethernet5\n   no shutdown\n   mtu 1550\n   no switchport\n   ip
+    P2P_LINK_TO_LEAF2_Ethernet5\n   no shutdown\n   mtu 1500\n   no switchport\n   ip
     address 192.168.103.12/31\n!\ninterface Ethernet5\n   description P2P_LINK_TO_LEAF3_Ethernet5\n
-    \  no shutdown\n   mtu 1550\n   no switchport\n   ip address 192.168.103.20/31\n!\ninterface
+    \  no shutdown\n   mtu 1500\n   no switchport\n   ip address 192.168.103.20/31\n!\ninterface
     Ethernet6\n   description P2P_LINK_TO_LEAF4_Ethernet5\n   no shutdown\n   mtu
-    1550\n   no switchport\n   ip address 192.168.103.28/31\n!\ninterface Loopback0\n
+    1500\n   no switchport\n   ip address 192.168.103.28/31\n!\ninterface Loopback0\n
     \  description EVPN_Overlay_Peering\n   no shutdown\n   ip address 192.168.101.13/32\n!\ninterface
     Management0\n   description oob_management\n   no shutdown\n   vrf MGMT\n   ip
     address 192.168.0.13/24\n!\nip routing\nno ip routing vrf MGMT\n!\nip prefix-list
@@ -477,13 +477,13 @@ cvp_configlets:
     1006 1199\n!\ntransceiver qsfp default-mode 4x10G\n!\nservice routing protocols
     model multi-agent\n!\nhostname spine4\ndns domain atd.lab\n!\nspanning-tree mode
     none\n!\nno enable password\nno aaa root\n!\nvrf instance MGMT\n!\ninterface Ethernet3\n
-    \  description P2P_LINK_TO_LEAF1_Ethernet6\n   no shutdown\n   mtu 1550\n   no
+    \  description P2P_LINK_TO_LEAF1_Ethernet6\n   no shutdown\n   mtu 1500\n   no
     switchport\n   ip address 192.168.103.6/31\n!\ninterface Ethernet4\n   description
-    P2P_LINK_TO_LEAF2_Ethernet6\n   no shutdown\n   mtu 1550\n   no switchport\n   ip
+    P2P_LINK_TO_LEAF2_Ethernet6\n   no shutdown\n   mtu 1500\n   no switchport\n   ip
     address 192.168.103.14/31\n!\ninterface Ethernet5\n   description P2P_LINK_TO_LEAF3_Ethernet6\n
-    \  no shutdown\n   mtu 1550\n   no switchport\n   ip address 192.168.103.22/31\n!\ninterface
+    \  no shutdown\n   mtu 1500\n   no switchport\n   ip address 192.168.103.22/31\n!\ninterface
     Ethernet6\n   description P2P_LINK_TO_LEAF4_Ethernet6\n   no shutdown\n   mtu
-    1550\n   no switchport\n   ip address 192.168.103.30/31\n!\ninterface Loopback0\n
+    1500\n   no switchport\n   ip address 192.168.103.30/31\n!\ninterface Loopback0\n
     \  description EVPN_Overlay_Peering\n   no shutdown\n   ip address 192.168.101.14/32\n!\ninterface
     Management0\n   description oob_management\n   no shutdown\n   vrf MGMT\n   ip
     address 192.168.0.14/24\n!\nip routing\nno ip routing vrf MGMT\n!\nip prefix-list

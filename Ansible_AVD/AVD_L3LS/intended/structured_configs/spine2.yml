@@ -105,7 +105,7 @@ ethernet_interfaces:
   peer_type: l3leaf
   description: P2P_LINK_TO_LEAF1_Ethernet4
   shutdown: false
-  mtu: 1550
+  mtu: 1500
   type: routed
   ip_address: 192.168.103.2/31
 - name: Ethernet4
@@ -114,7 +114,7 @@ ethernet_interfaces:
   peer_type: l3leaf
   description: P2P_LINK_TO_LEAF2_Ethernet4
   shutdown: false
-  mtu: 1550
+  mtu: 1500
   type: routed
   ip_address: 192.168.103.10/31
 - name: Ethernet5
@@ -123,7 +123,7 @@ ethernet_interfaces:
   peer_type: l3leaf
   description: P2P_LINK_TO_LEAF3_Ethernet4
   shutdown: false
-  mtu: 1550
+  mtu: 1500
   type: routed
   ip_address: 192.168.103.18/31
 - name: Ethernet6
@@ -132,7 +132,7 @@ ethernet_interfaces:
   peer_type: l3leaf
   description: P2P_LINK_TO_LEAF4_Ethernet4
   shutdown: false
-  mtu: 1550
+  mtu: 1500
   type: routed
   ip_address: 192.168.103.26/31
 loopback_interfaces:

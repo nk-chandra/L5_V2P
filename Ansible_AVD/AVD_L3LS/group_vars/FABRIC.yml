@@ -13,10 +13,10 @@ spine:
   defaults:
     platform: cEOS-lab
     bgp_as: 65001
+    loopback_ipv4_pool: 192.168.101.0/24
     bgp_defaults:
       - 'no bgp default ipv4-unicast'
       - 'distance bgp 20 200 200'
-    loopback_ipv4_pool: 192.168.101.0/24
     mlag: false
   nodes:
     - name: spine1
@@ -80,7 +80,7 @@ l3leaf:
 
 
 # There's an issue with vEOS with larger MTUs
-p2p_uplinks_mtu: 1550
+p2p_uplinks_mtu: 1500
 
 # BFD Settings
 bfd_multihop:

@@ -186,14 +186,14 @@ vlan_interfaces:
 - name: Vlan4093
   description: MLAG_PEER_L3_PEERING
   shutdown: false
-  mtu: 1550
+  mtu: 1500
   ip_address: 10.255.251.5/31
 - name: Vlan4094
   description: MLAG_PEER
   shutdown: false
   ip_address: 10.255.252.5/31
   no_autostate: true
-  mtu: 1550
+  mtu: 1500
 - name: Vlan10
   tenant: ACME
   description: DMZ
@@ -212,7 +212,7 @@ vlan_interfaces:
   shutdown: false
   description: 'MLAG_PEER_L3_iBGP: vrf VRF_A'
   vrf: VRF_A
-  mtu: 1550
+  mtu: 1500
   ip_address: 10.255.251.5/31
 port_channel_interfaces:
 - name: Port-Channel1
@@ -258,7 +258,7 @@ ethernet_interfaces:
   peer_type: spine
   description: P2P_LINK_TO_SPINE1_Ethernet6
   shutdown: false
-  mtu: 1550
+  mtu: 1500
   type: routed
   ip_address: 192.168.103.25/31
 - name: Ethernet4
@@ -267,7 +267,7 @@ ethernet_interfaces:
   peer_type: spine
   description: P2P_LINK_TO_SPINE2_Ethernet6
   shutdown: false
-  mtu: 1550
+  mtu: 1500
   type: routed
   ip_address: 192.168.103.27/31
 - name: Ethernet5
@@ -276,7 +276,7 @@ ethernet_interfaces:
   peer_type: spine
   description: P2P_LINK_TO_SPINE3_Ethernet6
   shutdown: false
-  mtu: 1550
+  mtu: 1500
   type: routed
   ip_address: 192.168.103.29/31
 - name: Ethernet6
@@ -285,7 +285,7 @@ ethernet_interfaces:
   peer_type: spine
   description: P2P_LINK_TO_SPINE4_Ethernet6
   shutdown: false
-  mtu: 1550
+  mtu: 1500
   type: routed
   ip_address: 192.168.103.31/31
 - name: Ethernet9

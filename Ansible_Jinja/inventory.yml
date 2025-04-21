@@ -3,8 +3,7 @@ all:
     CVP_cluster:
       vars:
           ansible_user: arista
-          ansible_password: PASSWORD-GOES-HERE
-          ansible_connection: httpapi
+          ansible_password: arista7t2j
           ansible_httpapi_use_ssl: True
           ansible_httpapi_validate_certs: False
           ansible_network_os: eos
@@ -16,19 +15,19 @@ all:
       vars:
         ansible_user: arista
         ansible_network_os: eos
-        ansible_password: PASSWORD-GOES-HERE
+        ansible_password: arista7t2j
         ansible_connection: httpapi
         ansible_httpapi_use_ssl: True
         ansible_httpapi_validate_certs: False
         ansible_httpapi_port: 443
     # This section will have Ansible connect via the SSH CLI
-    #     ansible_connection: network_cli
-    #     ansible_user: arista
-    #     ansible_network_os: eos
-    #     ansible_become: yes
-    #     ansible_become_method: enable
-    #     ansible_connection: network_cli
-    #     ansible_network_os: eos
+    #    ansible_connection: network_cli
+    #    ansible_user: arista
+    #    ansible_network_os: eos
+    #    ansible_become: yes
+    #    ansible_become_method: enable
+    #    ansible_connection: network_cli
+    #    ansible_network_os: eos
       children:
         spines:
           hosts:
